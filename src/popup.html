@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WHOIS Lookup</title>
+  <link rel="stylesheet" href="/style/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>WHOIS Lookup</h1>
+    <input id="urlInput" type="text" placeholder="Enter a URL or domain" />
+    <button id="whoisButton">Fetch WHOIS Info</button>
+
+    <div id="loader" class="loader" style="display: none;"></div>
+
+    <table id="resultsTable" style="display: none;">
+      <thead>
+        <tr>
+          <th>Field</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody id="resultsBody"></tbody>
+    </table>
+  </div>
+  <script src="whoisService.js"></script>
+</body>
+
+</html>

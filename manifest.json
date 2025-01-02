@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Website Info Checker",
+  "description": "Check WHOIS and Security Headers of Websites",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "src/extensionEvents.js"
+  },
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": "assets/icon.png"
+  },
+  "icons": {
+    "16": "assets/icon.png",
+    "48": "assets/icon.png",
+    "128": "assets/icon.png"
+  },
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}

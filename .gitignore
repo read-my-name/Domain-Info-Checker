@@ -1,0 +1,4 @@
+# Virtual environment for Python (if used)
+env/
+venv/
+example.py

@@ -1,0 +1,142 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #1e3c72, #2a5298); /* Stylish radial gradient */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px; /* Ensure minimum height */
+    width: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add depth */
+}
+
+/* Main Container */
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 320px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Frosted glass effect */
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); /* Adds blur for frosted glass */
+}
+
+/* Header Styling */
+h1 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #f0f4ff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+/* Input Styling */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #fff; /* Add border around the input */
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3); /* Subtle background */
+    color: #000;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Light inner shadow */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+/* Remove outline when focused */
+input:focus {
+    background: rgba(255, 255, 255, 0.5); /* Highlight background on focus */
+    box-shadow: inset 0 0 6px rgba(0, 123, 255, 0.8); /* Soft glow effect */
+    outline: none; /* Remove outline when focused */
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Gradient button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb); /* Reverse gradient on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Loader Styling */
+.loader {
+    width: 40px;
+    height: 40px;
+    margin: 20px auto;
+    border: 4px solid #fff;
+    border-top: 4px solid #6a11cb;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    color: #f0f4ff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2); /* Light background for header */
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Add Responsiveness */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    button, input {
+        font-size: 0.9rem;
+    }
+}

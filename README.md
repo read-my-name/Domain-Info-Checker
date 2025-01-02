@@ -8,9 +8,11 @@
 - Click on "Load unpacked" and select the project folder.
 
 ### 2. Start the Flask server:
-#### Install Flask:
+#### Install necessary libraries:
 ```
 pip install flask
+pip install python-whois
+pip install pytz
 ```
 #### Run the Flask App:
 To start the Flask server, use the command:
